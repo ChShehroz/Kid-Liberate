@@ -32,7 +32,10 @@
 
 .footer {
   background-color: #5d6d7e; /* Dark background for high contrast */
-  color: #ffffff; /* White text for visibility */
+}
+
+.footer p {
+  margin-right: 20px; /* Ensures spacing between text elements */
 }
 
 .footerLogo {
@@ -50,8 +53,27 @@
   animation: heartbeat 1.5s infinite;
 }
 
-.text-muted {
-  color: #b0bec5; /* Muted color for secondary text */
+@keyframes heartbeat {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  14%,
+  70% {
+    transform: scale(1.3);
+  }
+}
+
+.text-body-secondary {
+  color: #f8f9fa; /* Light grey for secondary text, ensuring legibility */
+}
+
+.text-body-secondary:hover {
+  color: #dcdcdc; /* Lighter on hover for interaction feedback */
+}
+
+.nav svg {
+  fill: currentColor; /* Ensures SVG icons inherit color from parent element */
 }
 
 .text-muted {
@@ -77,6 +99,6 @@ h1.fw-bolder {
 }
 
 p.lead {
-  color: #000000;
+  color: #201f1f;
   font-weight: 400;
 }
